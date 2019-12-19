@@ -9,10 +9,10 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 var con = mysql.createConnection({
-    host: "sql12.freesqldatabase.com",
-    user: "rootsql12316294",
-    password: "GbzZjrJjzh",
-    database:"sql12316294"
+    host: "localhost",
+    user: "root",
+    password: "",
+    database:"employee"
     
   });
   
