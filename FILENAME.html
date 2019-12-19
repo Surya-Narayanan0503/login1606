@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+   
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Login
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+        <form id="login" class="input-group" onsubmit="validate();return false">
+          <input
+            type="text"
+            id="id"
+            class="input-field"
+            placeholder="User Email"
+            required
+          />
+          <input
+            type="password"
+            id="pas"
+            class="input-field"
+            placeholder="Enter password"
+            required
+          />
+          <input type="checkbox" id="Remember" class="check-box" /><span
+            >Remember password</span
+          >
+          <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <form id="register" class="input-group" onsubmit="feed();return false">
+          <input
+            type="text"
+            id="name"
+            class="input-field"
+            placeholder="Username"
+            required
+          />
+          <input
+            type="email"
+            id="mail"
+            class="input-field"
+            placeholder="Enter email"
+            required
+          />
+          <input
+            type="password"
+            id="pass"
+            class="input-field"
+            placeholder="Create password"
+            required
+          />
+          <br /><br />
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+    </div>
+    <script src="action.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </body>
+</html>
